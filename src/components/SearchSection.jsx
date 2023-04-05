@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from './Logo';
-import "./index.css"
 import SearchBarComponent from "./SearchBarComponent";
 import Button from './Button'
 import Links from './Links'
