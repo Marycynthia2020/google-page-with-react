@@ -1,13 +1,28 @@
-import React from "react";
+import { useState } from "react";
 
+const SearchBarComponent = ({ showValue }) => {
+  const handleChange = (event) => {
+    setSearchValue(event.target.value);
+  };
 
+  const enterKeyPressed = (event) => {
+    if (event.key === "Enter") {
+      showValue(searchValue);
+      setSearchValue('');
+    }
+  };
 
-const SearchBarComponent = () => {
-    return (
+  const [searchValue, setSearchValue] = useState("");
+  return (
     <div>
       <div className="searchicons">
-        <input type="text" placeholder="Search Google or type a URL" />
-        
+        <input
+          type="text"
+          placeholder="Search Google or type a URL"
+          value={searchValue}
+          onChange={handleChange}
+          onKeyDown={enterKeyPressed}
+        />
       </div>
     </div>
   );

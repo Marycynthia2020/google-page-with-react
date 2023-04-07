@@ -5,9 +5,13 @@ import TopFooter from './TopFooter'
 import DownFooter from './DownFooter'
 import "./index.css"
 
+// import Counter from './Counter'
+
 const GoogleApp = () => {
+
   return (
-    <div>
+    <div className= 'google-app'>
+      {/* <Counter /> */}
         <Header />
         <SearchSection />
         <div className = 'all-footers'>
