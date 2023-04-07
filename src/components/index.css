@@ -71,7 +71,7 @@
   justify-content: flex-end;
   padding: 8px;
   align-items: center;
-  margin-bottom: 60px;
+
 }
 
 .app-header-menu {
@@ -80,5 +80,5 @@
 }
 
 .all-footers {
-  margin-top: 150px;
+  margin-top: 90px;
 }
