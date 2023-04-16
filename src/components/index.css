@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+box-sizing: border-box;
+}
 .Search {
    display: flex;
    flex-direction: column;
@@ -80,5 +85,6 @@
 }
 
 .all-footers {
-  margin-top: 90px;
+  margin-top: 250px;
+
 }
